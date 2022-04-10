@@ -220,7 +220,7 @@ phi_x_values = 0.000
 #phi_x_values = np.arange(0, np.pi - 0.001, 0.7853)
 phi_y = 0.00000
 V = 4.00000000
-list_of_V_0s = np.unique(np.concatenate(([0.1, 0.001], np.arange(0, 1, 0.1), np.arange(0, 11, 1), np.arange(10,30,2), np.arange(10,101,10))))
+list_of_V_0s = np.unique(np.concatenate(([0.1, 0.01], np.arange(0, 1, 0.1), np.arange(0, 11, 1), np.arange(10,30,2), np.arange(10,101,10))))
 
 ### Momentum sectors ######################################################################
 nx = 0
