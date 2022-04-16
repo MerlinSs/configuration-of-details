@@ -1,10 +1,16 @@
+set encoding=utf-8		" 打开文件时编码格式
+set fileencoding=utf-8          " 在保存文件时，指定编码
+set termencoding=utf-8          " 终端环境告诉vim使用编码
+"set mouse=a                     " 启用鼠标
+set shiftwidth=4                " 缩进的空格数
 " plug issues.
 call plug#begin()
 
 Plug 'lervag/vimtex'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-"Plug 
+Plug 'chusiang/vim-sdcv'
+
 call plug#end()
 
 " This is necessary for VimTeX to load properly. The "indent" is optional.
@@ -16,7 +22,7 @@ filetype plugin indent on
 " info).
 syntax enable
 let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
+let g:vimtex_view_method='general'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
@@ -31,3 +37,5 @@ let g:tex_conceal='abdmg'
 "set number
 "highlight LineNr cterm=bold ctermfg=7
 "highlight LineNr ctermbg=237
+
+nmap <leader>w :call SearchWord()<CR>		"查字典
